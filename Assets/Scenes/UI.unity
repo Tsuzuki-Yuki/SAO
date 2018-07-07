@@ -1788,8 +1788,8 @@ GameObject:
   - component: {fileID: 1586653891}
   - component: {fileID: 1586653892}
   - component: {fileID: 1586653893}
-  - component: {fileID: 1586653895}
   - component: {fileID: 1586653894}
+  - component: {fileID: 1586653895}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1870,12 +1870,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586653890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e145b57425df8447895ac9e44584f615, type: 3}
+  m_Script: {fileID: 11500000, guid: 283a71c1608da4707ac2e641cb400109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1175753723525496, guid: 6000270fc760c474e9c0f95a724dce5c, type: 2}
-  activeSprite: {fileID: 21300000, guid: ed1d1af97b219450b8887ead0ef1a9b8, type: 3}
-  inActiveSprite: {fileID: 21300000, guid: 18fe210353f85413296032fe3b52a954, type: 3}
+  itemViewPrefab: {fileID: 1749140794709006, guid: 6000270fc760c474e9c0f95a724dce5c,
+    type: 2}
+  arrow: {fileID: 1690396795}
+  onSelectedArrowColor: {r: 0.972549, g: 0.6, b: 0, a: 1}
+  activeSprite: {fileID: 21300002, guid: ed1d1af97b219450b8887ead0ef1a9b8, type: 3}
+  inActiveSprite: {fileID: 21300002, guid: 18fe210353f85413296032fe3b52a954, type: 3}
+  itemNum: 5
 --- !u!1 &1690396793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +1927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.59815896, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
