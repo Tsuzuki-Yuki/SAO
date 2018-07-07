@@ -1446,7 +1446,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 300}
+  m_SizeDelta: {x: 350, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106543960
 MonoBehaviour:
@@ -1812,7 +1812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000011444092}
+  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1586653892
@@ -1875,11 +1875,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemViewPrefab: {fileID: 1749140794709006, guid: 6000270fc760c474e9c0f95a724dce5c,
     type: 2}
-  arrow: {fileID: 1690396795}
   onSelectedArrowColor: {r: 0.972549, g: 0.6, b: 0, a: 1}
   activeSprite: {fileID: 21300002, guid: ed1d1af97b219450b8887ead0ef1a9b8, type: 3}
   inActiveSprite: {fileID: 21300002, guid: 18fe210353f85413296032fe3b52a954, type: 3}
-  itemNum: 5
+  itemNum: 10
+  arrow: {fileID: 1690396795}
+  rect: {fileID: 1586653891}
 --- !u!1 &1690396793
 GameObject:
   m_ObjectHideFlags: 0

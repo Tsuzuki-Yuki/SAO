@@ -4,6 +4,7 @@ using UnityEngine;
 using UniRx;
 using UnityEngine.UI;
 using System.Linq;
+using DG.Tweening;
 
 namespace UI
 {
@@ -11,11 +12,13 @@ namespace UI
 	{
 		List<ItemView> itemList = new List<ItemView>();
 		[SerializeField] GameObject itemViewPrefab;
-		[SerializeField] Image arrow;
 		[SerializeField] Color onSelectedArrowColor;
 		[SerializeField] private Sprite activeSprite;
 		[SerializeField] private Sprite inActiveSprite;
 		[SerializeField] int itemNum;
+
+		[SerializeField] Image arrow;
+		[SerializeField] RectTransform rect;
 
 		void Awake()
 		{
@@ -41,6 +44,7 @@ namespace UI
 			if(!itemView.OnSelected)
 			{
 				itemView.Selected();
+				OnSelectedAutoScroll(itemView);
 				foreach(var item in itemList.FindAll(item => item != itemView))
 				{
 					item.Unselected();
@@ -55,6 +59,12 @@ namespace UI
 				}
 				arrow.color = Color.white;
 			}
+		}
+
+		private void OnSelectedAutoScroll(ItemView selectedItem)
+		{
+			var index = itemList.IndexOf(selectedItem);
+			rect.DOAnchorPosY(index * (100f + 5f), 0.3f);
 		}
 	}
 }
